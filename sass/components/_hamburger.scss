@@ -1,0 +1,98 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding: 50px 150px;
+}
+
+.logo {
+    display: block;
+    filter: brightness(0) invert(1);
+    width: auto;
+    height: 75px;
+    opacity: .75;
+    transition: 1s;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+        transition: 1s;
+    }
+}
+
+input#menu {
+    visibility: hidden;
+}
+
+label {
+    position: absolute;
+    left: 85%;
+    z-index: 2;
+}
+
+label, label::before, label::after {
+    width: 45px;
+    height: 6px;
+    background: #ffffff;
+    box-shadow: 0px 5px 5px #000000;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+label::before {
+    content: '';
+    position: absolute;
+    transform: translateY(-18px);
+}
+
+label::after {
+    content: '';
+    position: absolute;
+    transform: translateY(18px);
+}
+
+// add animation to hamburger when checked
+
+#menu:checked + label {
+    width: 0px;
+}
+
+#menu:checked + label::before {
+    transform: rotate(45deg);
+}
+
+#menu:checked + label:after {
+    transform: rotate(-45deg);
+}
+
+// side-menu style
+.side-menu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    background: linear-gradient(#0000003f, #0000003f);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 50px;
+        opacity: .5;
+        &:hover {
+            color: #4EECDE;
+            background-color: #000000b7;
+            opacity: 1;
+            transition: .75s;
+        }
+    }
+}
+
+// add animation to side-menu when checked
+
+#menu:checked ~ .side-menu {
+    width: 350px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website that showcases my work.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2anchez/portfolio.git"
+  },
+  "author": "Christian Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2anchez/portfolio/issues"
+  },
+  "homepage": "https://github.com/2anchez/portfolio#readme"
+}
