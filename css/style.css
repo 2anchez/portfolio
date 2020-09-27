@@ -19,10 +19,15 @@ body {
   background-color: #3E3E3E;
 }
 
+.landing-page {
+  background-image: url(../img/bgimg.jpg);
+  background-size: cover;
+}
+
 nav {
   display: flex;
   align-items: center;
-  padding: 50px 150px;
+  padding: 10px 175px;
 }
 
 .logo {
@@ -110,12 +115,13 @@ label::after {
 }
 
 #menu:checked ~ .side-menu {
-  width: 350px;
+  width: 300px;
 }
 
 h1 {
   text-align: center;
   font-size: 4em;
+  text-shadow: 5px 1px 10px #000000;
 }
 
 article {
@@ -151,17 +157,38 @@ article {
   transition: 0.75s;
 }
 
-.portfolio {
-  margin: 25px 150px;
+.social-icons {
   display: flex;
-  justify-content: space-between;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 50px 25px;
+  border-radius: 100%;
+  box-shadow: 0px 5px 5px #000000;
+  opacity: 0.5;
+  transition: 0.75s;
+  cursor: pointer;
+}
+.social-icon:hover {
+  opacity: 1;
+  transition: 0.75s;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .portfolio--img {
   width: 350px;
   height: 250px;
   border-radius: 50px;
   box-shadow: 1px 1px 15px #000000;
-  z-index: 2;
+  z-index: 3;
   transition: 0.75s ease-in-out;
 }
 .portfolio--title {
@@ -172,8 +199,8 @@ article {
   height: 200px;
   border-radius: 50px;
   padding: 20px;
-  box-shadow: 1px 1px 15px #000000;
   z-index: -1;
+  box-shadow: 1px 1px 15px #000000;
   transition: 0.75s ease-in-out;
 }
 .portfolio--title h3 {
@@ -185,7 +212,7 @@ article {
 }
 
 .portfolio--img {
-  transform: translateY(110px);
+  transform: translateY(120px);
 }
 
 .card:hover .portfolio--img {
@@ -197,11 +224,11 @@ article {
 }
 
 .portfolio--title {
-  transform: translateY(-100px);
+  transform: translateY(-120px);
 }
 
 .project-btn {
-  float: right;
+  position: absolute;
   font-family: "Raleway";
   color: #000000;
   cursor: pointer;
@@ -212,17 +239,16 @@ article {
 .project-btn:hover {
   color: #4EECDE;
   border: 2px solid #4EECDE;
-  opacity: 1;
   transition: 0.75s;
 }
 
 .wrapper {
-  display: flex;
-  margin: 0px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .wrapper--content {
-  padding: 80px;
+  padding: 10px 50px;
   line-height: 1.5em;
 }
 
@@ -232,7 +258,19 @@ article {
 }
 
 .br {
-  border-right: 3px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+
+.samples {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sample-img {
+  width: 500px;
+  height: auto;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

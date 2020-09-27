@@ -1,7 +1,7 @@
 nav {
     display: flex;
     align-items: center;
-    padding: 50px 150px;
+    padding: 10px 175px;
 }
 
 .logo {
@@ -94,5 +94,5 @@ label::after {
 // add animation to side-menu when checked
 
 #menu:checked ~ .side-menu {
-    width: 350px;
+    width: 300px;
 }

@@ -4,15 +4,15 @@
 @import "./pages/home";
 
 .portfolio {
-    margin: 25px 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     &--img {
         width: 350px;
         height: 250px;
         border-radius: 50px;
         box-shadow: 1px 1px 15px #000000;
-        z-index: 2;
+        z-index: 3;
         transition: .75s ease-in-out;
     }
     &--title {
@@ -20,11 +20,11 @@
         color: #000000;
         background-color: #ffffff;
         width: 350px;
-        height: 200px;;
+        height: 200px;
         border-radius: 50px;
         padding: 20px;
-        box-shadow: 1px 1px 15px #000000;
         z-index: -1;
+        box-shadow: 1px 1px 15px #000000;
         transition: .75s ease-in-out;
         h3 {
             margin-top: 75px;
@@ -39,7 +39,7 @@
 // Card animation on hover
 
 .portfolio--img {
-    transform: translateY(110px);
+    transform: translateY(120px);
 }
 
 .card:hover .portfolio--img {
@@ -51,11 +51,11 @@
 }
 
 .portfolio--title {
-    transform: translateY(-100px);
+    transform: translateY(-120px);
 }
 
 .project-btn {
-    float: right;
+    position: absolute;
     font-family: 'Raleway';
     color: #000000;
     cursor: pointer;
@@ -65,7 +65,6 @@
     &:hover {
         color: #4EECDE;
         border: 2px solid #4EECDE;
-        opacity: 1;
         transition: .75s;
     }
 }
@@ -73,12 +72,12 @@
 
 // wrapper
 .wrapper {
-    display: flex;
-    margin: 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .wrapper--content {
-    padding: 80px;
+    padding: 10px 50px;
     line-height: 1.5em;
 }
 
@@ -88,5 +87,16 @@
 }
 
 .br {
-    border-right: 3px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+.samples {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sample-img {
+    width: 500px;
+    height: auto;
+    margin: 5px;
 }

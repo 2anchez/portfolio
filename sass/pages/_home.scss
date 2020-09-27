@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
     font-size: 4em;
+    text-shadow: 5px 1px 10px #000000;
 }
 article {
     display: flex;
@@ -30,6 +31,27 @@ article {
     &:hover {
         color: #4EECDE;
         border: 2px solid #4EECDE;
+        opacity: 1;
+        transition: .75s;
+    }
+}
+
+.social-icons {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 50px 25px;
+    border-radius: 100%;
+    box-shadow: 0px 5px 5px #000000;
+    opacity: .5;
+    transition: .75s;
+    cursor: pointer;
+    &:hover {
         opacity: 1;
         transition: .75s;
     }
