@@ -8,6 +8,8 @@
     
         <link rel="stylesheet" media="screen and (max-width: 2400px)" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <script src="main.js"></script>
     </head>
     <body>
         <nav>
@@ -20,7 +22,79 @@
                 <a href="https://2anchez.github.io/resume/" target="_blank">Resume</a>
             </div>
         </nav>
+        <div class="home-hero">
+            <h1>Hello!<br>
+                <span><strong>I am a </strong> 
+                    <span class="txt-type" data-wait="3000" data-words=' ["Developer.", "Designer.", "Creator."] '></span>
+                </span>
+            </h1>
+        </div>
+
+        <section class="services" id="services">
+            
+            <h2>Services</h2>
+            <h3>Here is a list of services that I provide!</h3>
+           
+            <div class="services--wrapper">
+                
+                <div id="blur" class="wrapper--content">
+                    <img class="wrapper--icon" src="img/logo-design.png" alt="placeholder">
+                    <h3>Logo Design</h3>
+                    <p>If you have a business or brand, you want your business to stand out, right? 
+                        <button class="servicebtn"><a href="#services" onclick="toggle()">Learn more</a></button>
+                    </p>
+                </div>
+
+                <div id="popup">
+                    <h3>Logo Design</h3>
+                    <p>
+                        In highly competitive business environment, frequently utilized by my clients, 
+                        this service has been essential to success on many occasions. Along with my unique professional 
+                        perspective, this service has helped clients establish a business identity and brand image.
+                        <button class="servicebtn"><a href="#services" onclick="toggle()">Close</a><button></button> 
+                    </p>
+                </div>
+
+                <div id="blur" class="wrapper--content">
+                    <img class="wrapper--icon" src="img/brochure.png" alt="placeholder">
+                    <h3>Brochure Design</h3>
+                    <p>
+                        Brochures are created to attract more clients without having to say a word.
+                        <button class="servicebtn"><a href="#services" onclick="toggle()">Learn more</a></button>
+                    </p>
+                </div>
+
+                <div class="wrapper--content">
+                    <img class="wrapper--icon" src="img/business-card.png" alt="placeholder">
+                    <h3>Stationary Design</h3>
+                    <p>Every business needs a business card to help promote their brand.</p>
+                </div>
+                <div class="wrapper--content">
+                    <img class="wrapper--icon" src="img/advertisment.png" alt="placeholder">
+                    <h3>Stationary Design</h3>
+                    <p>With a custom web banner design, spread your business message with attractive high quality graphic design.</p>
+                </div>
+                <div class="wrapper--content">
+                    <img class="wrapper--icon" src="img/web-design.png" alt="placeholder">
+                    <h3>Web Design</h3>
+                    <p>With a well-designed layout you will be able to engage with clients and give them an insight to what your business or brand is about.</p>
+                </div>
+                <div class="wrapper--content">
+                    <img class="wrapper--icon" src="img/notebook.png" alt="placeholder">
+                    <h3>Other Design</h3>
+                    <p>If you can't find a specific graphic design option listed, you can get a custom design suited just for you!</p>
+                </div>
+            </div>
+        </section>
         <section class="portfolio">
+
+            <div class="card">
+                <img class="portfolio--img" src="img/placeholder.jpg" alt="placeholder">
+                <header class="portfolio--title">
+                    <h3>Project Title</h3>
+                    <p>project description</p>
+                </header>
+            </div>
 
             <div class="card">
                 <img class="portfolio--img" src="img/placeholder.jpg" alt="placeholder">
@@ -36,7 +110,14 @@
                 <header class="portfolio--title">
                     <h3>Project Title</h3>
                     <p>project description</p>
-                    
+                </header>
+            </div>
+
+            <div class="card">
+                <img class="portfolio--img" src="img/placeholder.jpg" alt="placeholder">
+                <header class="portfolio--title">
+                    <h3>Project Title</h3>
+                    <p>project description</p>
                 </header>
             </div>
 

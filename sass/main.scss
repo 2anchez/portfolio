@@ -2,6 +2,85 @@
 @import "./base/global";
 @import "./components/hamburger";
 @import "./pages/home";
+@import "./layout/portfolio-home-hero";
+
+.services {
+    background-color: #cecece;
+    color: #000000;
+    padding: 100px 175px;
+    align-content: center;
+    h2 {
+        text-align: center;
+        font-size: 4em;
+    }
+    h3 {
+        text-align: center;
+    }
+    &--wrapper {
+        padding: 50px 0;
+        margin-left: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.wrapper--content {
+    img {
+        margin-left: 90px;
+    }
+}
+
+.wrapper--content#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* content is hidden */
+#popup {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 50px;
+    background: #ffffff;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    opacity: 0;
+    visibility: hidden;
+    p {
+        line-height: 1.5em;
+        margin: 10px;
+    }
+}
+
+/* content is visible */ 
+#popup.active {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transition: 0.85s;
+    visibility: visible;
+}
+
+.servicebtn {
+    border: 1px solid #000000;
+    display: block;
+    background: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+        color: #ffffff;
+        transition: .5s;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        padding: 10px;
+    }
+}
 
 .portfolio {
     display: flex;
@@ -10,8 +89,7 @@
     &--img {
         width: 350px;
         height: 250px;
-        border-radius: 50px;
-        box-shadow: 1px 1px 15px #000000;
+        border-radius: 5px;
         z-index: 3;
         transition: .75s ease-in-out;
     }
@@ -20,8 +98,8 @@
         color: #000000;
         background-color: #ffffff;
         width: 350px;
-        height: 200px;
-        border-radius: 50px;
+        height: 250px;
+        border-radius: 5px;
         padding: 20px;
         z-index: -1;
         box-shadow: 1px 1px 15px #000000;
@@ -72,13 +150,16 @@
 
 // wrapper
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 175px;
 }
 
 .wrapper--content {
-    padding: 10px 50px;
+    width: 300px;
+    height: auto;
     line-height: 1.5em;
+    padding: 25px;
 }
 
 .wrapper--icon {
