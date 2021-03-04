@@ -268,16 +268,25 @@ article {
 }
 .services--wrapper {
   padding: 50px 0;
-  margin-left: 150px;
+  margin-left: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.wrapper--content img {
-  margin-left: 90px;
+.services--content {
+  width: 350px;
+  height: auto;
+  line-height: 1.5em;
+  padding: 20px;
 }
 
-.wrapper--content#blur.active {
+.services--icon {
+  width: 75px;
+  height: 75px;
+  margin-left: 120px;
+}
+
+.services--content#blur.active {
   filter: blur(20px);
   pointer-events: none;
   user-select: none;
@@ -407,15 +416,23 @@ article {
   height: auto;
   line-height: 1.5em;
   padding: 20px;
+  opacity: 0.35;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.wrapper--content:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .wrapper--icon {
   width: 75px;
   height: 75px;
+  margin-left: 75px;
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1950px;
   min-height: 500px;
   display: flex;
   flex-wrap: wrap;
@@ -459,6 +476,26 @@ article {
 
 .container .box:hover .imgbox img {
   transform: scale(1.2);
+}
+
+.heart {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  cursor: pointer;
+}
+.heart:hover i {
+  color: #f50057;
+}
+
+.far {
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.fas {
+  color: #f50057;
+  transition: 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */

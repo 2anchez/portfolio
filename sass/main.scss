@@ -89,15 +89,23 @@
     height: auto;
     line-height: 1.5em;
     padding: 20px;
+    opacity: .35;
+    cursor: pointer;
+    transition: 0.25s;
+    &:hover {
+        opacity: 1;
+        transition: 0.5s;
+    }
 }
 
 .wrapper--icon {
     width: 75px;
     height: 75px;
+    margin-left: 75px;;
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1950px;
     min-height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -141,4 +149,27 @@
 
 .container .box:hover .imgbox img {
     transform: scale(1.2);
+}
+
+
+// heart button
+
+.heart {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    cursor: pointer;
+    &:hover i {
+        color: #f50057;
+    }
+}
+
+.far {
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.fas {
+    color: #f50057;
+    transition: 0.4s;
 }

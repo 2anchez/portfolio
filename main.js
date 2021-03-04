@@ -79,3 +79,19 @@ class TypeWriter {
     var aside = document.querySelector("aside");
     aside.classList.toggle("sticky", window.scrollY > 700);
   })
+
+  // Like photo; Heart animation
+
+  function toggle() {
+    
+    var btn = document.getElementById('heartbtn');
+
+    if(btn.classList.contains("far")){
+      btn.classList.remove("far");
+      btn.classList.add("fas")
+    }
+    else{
+      btn.classList.remove("fas");
+      btn.classList.add("far");
+    }
+  }
