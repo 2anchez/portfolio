@@ -28,7 +28,7 @@ class TypeWriter {
       this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
   
       // Initial Type Speed
-      let typeSpeed = 300;
+      let typeSpeed = 100;
   
       if(this.isDeleting) {
         typeSpeed /= 2;
@@ -73,3 +73,9 @@ class TypeWriter {
     var blur = document.getElementById('popup');
     popup.classList.toggle('active')
   }
+
+  // Add sticky to secondary navigation bar
+  window.addEventListener("scroll", function(){
+    var aside = document.querySelector("aside");
+    aside.classList.toggle("sticky", window.scrollY > 700);
+  })
