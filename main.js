@@ -74,12 +74,6 @@ class TypeWriter {
     popup.classList.toggle('active')
   }
 
-  // Add sticky to secondary navigation bar
-  window.addEventListener("scroll", function(){
-    var aside = document.querySelector("aside");
-    aside.classList.toggle("sticky", window.scrollY > 700);
-  })
-
   // Like photo; Heart animation
 
   function toggle() {

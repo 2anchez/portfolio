@@ -5,118 +5,20 @@
 @import "./pages/home";
 @import "./layout/portfolio-home-hero";
 @import "./layout/services";
-
-
-.portfolio {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    &--img {
-        width: 350px;
-        height: 250px;
-        border-radius: 5px;
-        z-index: 1;
-        transition: .75s ease-in-out;
-    }
-    &--title {
-        position: relative;
-        color: #000000;
-        background-color: #ffffff;
-        width: 350px;
-        height: 250px;
-        border-radius: 5px;
-        padding: 20px;
-        z-index: -1;
-        box-shadow: 1px 1px 15px #000000;
-        transition: .75s ease-in-out;
-        h3 {
-            margin-top: 75px;
-        }
-    }
-}
-
-.card {
-    cursor: pointer;
-}
-
-// Card animation on hover
-
-.portfolio--img {
-    transform: translateY(120px);
-}
-
-.card:hover .portfolio--img {
-    transform: translateY(0);
-}
-
-.card:hover .portfolio--title {
-    transform: translateY(-80px);
-}
-
-.portfolio--title {
-    transform: translateY(-120px);
-}
-
-.project-btn {
-    position: absolute;
-    font-family: 'Raleway';
-    color: #000000;
-    cursor: pointer;
-    padding: 10px 5px;
-    background: none;
-    border: 2px solid #000000;
-    &:hover {
-        color: #4EECDE;
-        border: 2px solid #4EECDE;
-        transition: .75s;
-    }
-}
-
-
-// wrapper
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0;
-    background-image: url(../img/chalkboard-bg.jpg);
-    background-size: 100%;
-    padding: 50px;
-}
-
-.wrapper--content {
-    width: 350px;
-    height: auto;
-    line-height: 1.5em;
-    padding: 20px;
-    opacity: .35;
-    cursor: pointer;
-    transition: 0.25s;
-    &:hover {
-        opacity: 1;
-        transition: 0.5s;
-    }
-}
-
-.wrapper--icon {
-    width: 75px;
-    height: 75px;
-    margin-left: 75px;;
-}
+@import "./layout/projects";
+@import "./layout/wrapper";
 
 .container {
-    max-width: 1950px;
-    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 100px;
+    align-items: center;
 }
 
 .container .box {
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
     box-sizing: border-box;
     display: inline-block;
     margin: 5px;
@@ -154,10 +56,8 @@
 
 // heart button
 
-.heart {
-    position: absolute;
-    top: 90%;
-    left: 90%;
+#heartbtn {
+
     cursor: pointer;
     &:hover i {
         color: #f50057;

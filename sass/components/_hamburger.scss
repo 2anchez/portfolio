@@ -1,12 +1,13 @@
-nav {
+.primary-nav {
     display: flex;
     align-items: center;
-    padding: 10px 175px;
+    padding: 25px;
 }
 
 .logo {
     display: block;
     filter: brightness(0) invert(1);
+    margin-left: 100px;
     width: auto;
     height: 75px;
     opacity: .75;
@@ -70,7 +71,7 @@ label::after {
     right: 0px;
     height: 100%;
     width: 0px;
-    background: linear-gradient(#0000003f, #0000003f);
+    background: linear-gradient(#0000003f, #00000080);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -80,7 +81,7 @@ label::after {
         font-size: 2rem;
         text-decoration: none;
         color: #ffffff;
-        padding: 50px;
+        padding: 25px;
         opacity: .5;
         &:hover {
             color: #4EECDE;

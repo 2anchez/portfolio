@@ -1,40 +1,31 @@
-.navigation {
+.secondary-nav {
     color: #ffffff;
     background-color: #000000;
     letter-spacing: 2px;
-    padding: 0px 100px;
     text-transform: uppercase;
     transition: 0.5s;
-    width: 100%;
     z-index: 2;
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
         li {
             list-style: none;
-            padding: 2em;
+            padding: 1.25em;
             &:hover {
+                cursor: pointer;
                 background-color: #ffffff;
                 color: #000000;
                 transition: 0.5s;
             }
-            a {
-                text-decoration: none;
-                color: #ffffff;
-                letter-spacing: 2px;
-                transition: 0.5s;
-                padding: 2em;
-                &:hover {
-                    color: #000000;
-                }
+            &:focus {
+                background-color: $teal;
             }
         }
     }
 }
 
-aside.sticky {
+.secondary-nav.sticky {
     position: fixed;
     top: 0;
     background-color: #ffffff;
