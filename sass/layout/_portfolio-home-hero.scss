@@ -1,15 +1,14 @@
 .home-hero {
     background-image: url(../img/home-hero.jpeg);
-    background-position: center;
     background-size: cover;
+    background-position: center;
     display: flex;
     filter: saturate(0);
     flex-direction: column;
-    height: 625px;
+    height: 50vh;
     justify-content: center;
-    height: 625px;
     h1 {
-        font-size: 4em;
+        font-size: 4rem;
         span {
             .txt-type {
                 font-weight: 100;

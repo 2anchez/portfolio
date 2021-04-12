@@ -64,28 +64,3 @@ class TypeWriter {
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait);
   }
-
-// Pop up additional content box for "Logo Design"
-  function toggle(){
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active')
-    
-    var blur = document.getElementById('popup');
-    popup.classList.toggle('active')
-  }
-
-  // Like photo; Heart animation
-
-  function toggle() {
-    
-    var btn = document.getElementById('heartbtn');
-
-    if(btn.classList.contains("far")){
-      btn.classList.remove("far");
-      btn.classList.add("fas")
-    }
-    else{
-      btn.classList.remove("fas");
-      btn.classList.add("far");
-    }
-  }

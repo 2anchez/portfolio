@@ -97,3 +97,36 @@ label::after {
 #menu:checked ~ .side-menu {
     width: 300px;
 }
+
+@media (max-width: 400px) {
+    .logo {
+        margin-left: 0;
+        height: 50px;
+
+    }
+
+    label, label::before, label::after {
+        width: 25px;
+        height: 3px;
+        background: #ffffff;
+        box-shadow: 0px 5px 5px #000000;
+        transition: 0.75s;
+        cursor: pointer;
+    }
+
+    label::before {
+        content: '';
+        position: absolute;
+        transform: translateY(-12px);
+    }
+    
+    label::after {
+        content: '';
+        position: absolute;
+        transform: translateY(12px);
+    }
+
+    .side-menu {
+        background: linear-gradient(#0000009c, #0000009c);
+    }
+}
