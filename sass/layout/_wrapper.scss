@@ -43,7 +43,13 @@
     }
 
     .wrapper--content {
-        height: 100%;
         opacity: 1;
+        font-size: 0.85rem;
+    }
+
+    .wrapper--icon {
+        width: 30px;
+        height: auto;
+        align-self: center;
     }
 }
